@@ -4,7 +4,7 @@ services:
   redis-server:
     image: 'redis'
   node-app:
-    restart: on-failure
+    restart: always
     build: .
     ports:
       - "4001:8081"
